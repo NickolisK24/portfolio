@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nickolis Kacludis | Portfolio</title>
+  <meta name="description" content="Nickolis Kacludis - Full-stack developer portfolio. Projects, resume, and contact information." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
   <header>
     <div class="container">
       <h1>Nickolis Kacludis</h1>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -34,34 +35,33 @@
     </section>
 
     <section id="about" class="section">
-    <div class="container about-container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate full-stack developer with experience building web applications using modern tools and clean design principles.
-          I enjoy turning ideas into code, solving real-world problems, and learning new technologies along the way.
-        </p>
-        <p>
-          My journey into development began with curiosity and quickly turned into a career. I’m proficient with both front-end and back-end stacks, and I thrive on building efficient, scalable systems.
-        </p>
-      </div>
+      <div class="container about-container">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm a passionate full-stack developer with experience building web applications using modern tools and clean design principles.
+            I enjoy turning ideas into code, solving real-world problems, and learning new technologies along the way.
+          </p>
+          <p>
+            My journey into development began with curiosity and quickly turned into a career. I’m proficient with both front-end and back-end stacks, and I thrive on building efficient, scalable systems.
+          </p>
+        </div>
 
-      <div class="about-skills">
-        <h3>Technical Skills</h3>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>Java</li>
-          <li>C#</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-        </ul>
+        <div class="about-skills">
+          <h3>Technical Skills</h3>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-
+    </section>
 
     <section id="projects" class="section">
       <div class="container">
@@ -72,7 +72,8 @@
           <div>
             <h3>Personal Portfolio</h3>
             <p>This very site — built with semantic HTML and custom CSS to showcase my projects, resume, and skills.</p>
-            <a href="https://nickolisk24.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a href="https://github.com/NickolisK24/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://nickolisk24.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Live Demo</a> | 
+            <a href="https://github.com/NickolisK24/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
 
@@ -80,8 +81,9 @@
         <div class="project">
           <div>
             <h3>Playlist Generator</h3>
-            <p>A simple, responsive task management app built with JavaScript and localStorage for persistence.</p>
-            <a href="https://nickolisk24.github.io/playlist-generator/" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a href="https://github.com/NickolisK24/playlist-generator" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <p>A web app that helps you generate custom playlists based on your preferences. Built with JavaScript and localStorage for persistence.</p>
+            <a href="https://nickolisk24.github.io/playlist-generator/" target="_blank" rel="noopener noreferrer">Live Demo</a> | 
+            <a href="https://github.com/NickolisK24/playlist-generator" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
 
@@ -90,8 +92,10 @@
           <div>
             <h3>Budget Tracker</h3>
             <p>A useful application that allows you to keep track of your monthly income/expenses.</p>
-            <a href="https://nickolisk24.github.io/budget-tracker/" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a href="https://github.com/NickolisK24/budget-tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://nickolisk24.github.io/budget-tracker/" target="_blank" rel="noopener noreferrer">Live Demo</a> | 
+            <a href="https://github.com/NickolisK24/budget-tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
+        </div>
 
       </div>
     </section>
@@ -100,53 +104,55 @@
       <div class="container">
         <h2>Resume</h2>
         <p>For a more detailed look at my experience, education, and certifications, please download my resume below.</p>
-        <a href="Resume.pdf" download>Download Resume (PDF)</a>
+        <div aria-live="polite">
+          <a href="Resume.pdf" download>Download Resume (PDF)</a>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Feel free to reach out — whether it's a collaboration, job opportunity, or just to say hello.</p>
-      <ul class="contact-links">
-        <li><a href="mailto:nickoliskacludis@gmail.com">nickoliskacludis@gmail.com</a></li>
-        <li><a href="https://github.com/NickolisK24" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/nickolis-kacludis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out — whether it's a collaboration, job opportunity, or just to say hello.</p>
+        <ul class="contact-links">
+          <li><a href="mailto:nickoliskacludis@gmail.com">nickoliskacludis@gmail.com</a></li>
+          <li><a href="https://github.com/NickolisK24" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/nickolis-kacludis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-<script>
-  const toggle = document.getElementById('theme-toggle');
-  const body = document.body;
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
 
-  // Load saved theme from localStorage
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    body.classList.add('dark-mode');
-    toggle.textContent = '☀️ Toggle Light Mode';
-  }
-
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-
-    // Save preference
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-
-    // Update button text
-    toggle.textContent = isDark ? '☀️ Toggle Light Mode' : '🌙 Toggle Dark Mode';
-  });
-
-  // Set current year in footer
-  document.addEventListener('DOMContentLoaded', function() {
-    const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark-mode');
+      toggle.textContent = '☀️ Toggle Light Mode';
     }
-  });
-</script>
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+
+      // Save preference
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+      // Update button text
+      toggle.textContent = isDark ? '☀️ Toggle Light Mode' : '🌙 Toggle Dark Mode';
+    });
+
+    // Set current year in footer
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
 
   <footer>
     <div class="container">
